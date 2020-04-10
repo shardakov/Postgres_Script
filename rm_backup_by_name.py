@@ -31,3 +31,4 @@ for i in folders:
     for file in sorted(my_files, reverse=True)[3:]:
         if file[-5:] != '01.gz':
             os.remove(i + "/" + file)
+            print(file + " was deleted")
